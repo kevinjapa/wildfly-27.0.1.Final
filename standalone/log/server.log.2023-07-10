@@ -1,0 +1,1209 @@
+2023-07-10 07:32:29,073 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2023-07-10 07:32:29,511 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2023-07-10 07:32:29,516 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2023-07-10 07:32:29,584 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.1.Final (WildFly Core 19.0.1.Final) starting
+2023-07-10 07:32:29,585 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	apple.awt.application.name = Main
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/jboss-modules.jar
+	java.class.version = 63.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3z/x0r1p0bd2f7b2ysdskjmx4yc0000gn/T/
+	java.library.path = /Users/kevinjapa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 19.0.1+10-21
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 19
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 19.0.1
+	java.version.date = 2022-10-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 19
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 19.0.1+10-21
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final
+	jboss.host.name = macbook-pro-de-kevin
+	jboss.modules.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-pro-de-kevin
+	jboss.qualified.host.name = macbook-pro-de-kevin.local
+	jboss.server.base.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone
+	jboss.server.config.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/log
+	jboss.server.name = macbook-pro-de-kevin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 13.4.1
+	path.separator = :
+	program.name = JBossTools: WildFly 27
+	stderr.encoding = UTF-8
+	stdout.encoding = UTF-8
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = org.jboss.modules.Main -mp /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = 419
+	user.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/bin
+	user.home = /Users/kevinjapa
+	user.language = es
+	user.name = kevinjapa
+	user.timezone = America/Guayaquil
+2023-07-10 07:32:29,586 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 27 -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/log/boot.log -Dlogging.configuration=file:/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration/logging.properties -Djboss.home.dir=/Users/kevinjapa/Downloads/wildfly-27.0.1.Final -Dorg.jboss.logmanager.nocolor=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages 
+2023-07-10 07:32:29,963 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 2.0.0.Final
+2023-07-10 07:32:30,125 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 35) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2023-07-10 07:32:30,126 WARN  [org.jboss.as.controller] (ServerService Thread Pool -- 35) WFLYCTL0481: The runtime dependency package 'io.smallrye.opentracing-contrib' is already registered at location '/subsystem=microprofile-opentracing-smallrye'
+2023-07-10 07:32:30,237 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 15) WFLYCTL0028: Attribute 'cluster' in the resource at address '/subsystem=ejb3/service=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-07-10 07:32:30,253 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found demo.war in deployment directory. To trigger deployment create a file called demo.war.dodeploy
+2023-07-10 07:32:30,291 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2023-07-10 07:32:30,303 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.8.Final
+2023-07-10 07:32:30,311 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.8.Final
+2023-07-10 07:32:30,328 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.1.Final
+2023-07-10 07:32:30,329 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2023-07-10 07:32:30,330 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-07-10 07:32:30,330 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2023-07-10 07:32:30,332 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2023-07-10 07:32:30,338 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2023-07-10 07:32:30,339 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2023-07-10 07:32:30,341 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2023-07-10 07:32:30,343 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 69) WFLYNAM0001: Activating Naming Subsystem
+2023-07-10 07:32:30,346 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 68) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2023-07-10 07:32:30,349 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 76) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-07-10 07:32:30,356 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2023-07-10 07:32:30,361 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.9.Final)
+2023-07-10 07:32:30,363 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "demo.war" (runtime-name: "demo.war")
+2023-07-10 07:32:30,372 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2023-07-10 07:32:30,373 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.26.Final
+2023-07-10 07:32:30,376 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 78) WFLYWS0002: Activating WebServices Extension
+2023-07-10 07:32:30,381 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = postgresql-driver
+2023-07-10 07:32:30,382 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2023-07-10 07:32:30,384 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.1)
+2023-07-10 07:32:30,385 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-07-10 07:32:30,392 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-07-10 07:32:30,399 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2023-07-10 07:32:30,410 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2023-07-10 07:32:30,459 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2023-07-10 07:32:30,460 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2023-07-10 07:32:30,522 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.3.0.Final starting
+2023-07-10 07:32:30,567 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0014: Creating file handler for path '/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-07-10 07:32:30,570 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2023-07-10 07:32:30,571 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2023-07-10 07:32:30,572 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2023-07-10 07:32:30,623 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-07-10 07:32:30,653 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2023-07-10 07:32:30,653 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2023-07-10 07:32:30,675 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ejPostgresDS]
+2023-07-10 07:32:30,675 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-07-10 07:32:30,806 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2023-07-10 07:32:30,807 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/deployments
+2023-07-10 07:32:30,851 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 6.1.0.Final (Apache CXF 3.5.2.jbossorg-4) 
+2023-07-10 07:32:31,033 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for primary
+2023-07-10 07:32:31,040 WARN  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2023-07-10 07:32:31,092 INFO  [org.jipijapa] (MSC service thread 1-7) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 07:32:31,147 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 07:32:31,171 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment demo.war
+2023-07-10 07:32:31,260 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 8.0.0.Final
+2023-07-10 07:32:31,349 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'GestionClientes' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:app/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:module/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:global/demo/GestionClientes
+	java:app/demo/GestionClientes
+	java:module/GestionClientes
+
+2023-07-10 07:32:31,350 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'LugarDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:app/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:module/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:global/demo/LugarDAO
+	java:app/demo/LugarDAO
+	java:module/LugarDAO
+
+2023-07-10 07:32:31,351 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'TicketDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:app/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:module/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:global/demo/TicketDAO
+	java:app/demo/TicketDAO
+	java:module/TicketDAO
+
+2023-07-10 07:32:31,351 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'VehiculoDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:app/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:module/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:global/demo/VehiculoDAO
+	java:app/demo/VehiculoDAO
+	java:module/VehiculoDAO
+
+2023-07-10 07:32:31,351 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:app/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:module/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:global/demo/ClienteDAO
+	java:app/demo/ClienteDAO
+	java:module/ClienteDAO
+
+2023-07-10 07:32:31,351 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'DetalleFacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:module/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:global/demo/DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO
+	java:module/DetalleFacturaDAO
+
+2023-07-10 07:32:31,351 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'FacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:app/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:module/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:global/demo/FacturaDAO
+	java:app/demo/FacturaDAO
+	java:module/FacturaDAO
+
+2023-07-10 07:32:31,351 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'DatosDemo' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:app/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:module/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:global/demo/DatosDemo
+	java:app/demo/DatosDemo
+	java:module/DatosDemo
+
+2023-07-10 07:32:31,397 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2023-07-10 07:32:31,458 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-3) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
+2023-07-10 07:32:31,465 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-3) No shutdown hook registered: Please call close() manually on application shutdown.
+2023-07-10 07:32:31,467 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-3) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=demo.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MacBook-Pro-de-Kevin.local, jaeger.version=Java-1.6.0, ip=127.0.0.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2023-07-10 07:32:31,575 INFO  [org.jipijapa] (MSC service thread 1-1) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 07:32:31,671 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 5.1.0 (Final)
+2023-07-10 07:32:31,789 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 07:32:31,809 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 80) HHH000204: Processing PersistenceUnitInfo [name: primary]
+2023-07-10 07:32:31,878 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 80) HHH000412: Hibernate ORM core version 6.1.5.Final
+2023-07-10 07:32:32,009 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 80) HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-10 07:32:32,091 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 07:32:32,298 INFO  [SQL dialect] (ServerService Thread Pool -- 80) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-10 07:32:32,312 WARN  [org.hibernate.dialect.PostgreSQLPGObjectJdbcType] (ServerService Thread Pool -- 80) PostgreSQL JDBC driver classes are inaccessible and thus, certain DDL types like JSONB, JSON, GEOMETRY can not be used!: java.lang.ClassNotFoundException: org.postgresql.util.PGobject from [Module "org.hibernate" version 6.1.5.Final from local module loader @291a7e3c (finder: local module finder @ca30bc1 (roots: /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules,/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules/system/layers/base))]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:200)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:495)
+	at java.base/java.lang.Class.forName(Class.java:474)
+	at org.hibernate@6.1.5.Final//org.hibernate.internal.util.ReflectHelper.classForName(ReflectHelper.java:163)
+	at org.hibernate@6.1.5.Final//org.hibernate.dialect.PostgreSQLPGObjectJdbcType.<clinit>(PostgreSQLPGObjectJdbcType.java:45)
+	at org.hibernate@6.1.5.Final//org.hibernate.dialect.PostgreSQLDialect.registerColumnTypes(PostgreSQLDialect.java:231)
+	at org.hibernate@6.1.5.Final//org.hibernate.dialect.Dialect.contributeTypes(Dialect.java:1341)
+	at org.hibernate@6.1.5.Final//org.hibernate.dialect.PostgreSQLDialect.contributeTypes(PostgreSQLDialect.java:1229)
+	at org.hibernate@6.1.5.Final//org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:386)
+	at org.hibernate@6.1.5.Final//org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:143)
+	at org.hibernate@6.1.5.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate@6.1.5.Final//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.hibernate.jipijapa-hibernate6@27.0.1.Final//org.jboss.as.jpa.hibernate.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:45)
+	at org.jboss.as.jpa@27.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:171)
+	at org.jboss.as.jpa@27.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:129)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:664)
+	at org.jboss.as.jpa@27.0.1.Final//org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:214)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.JBossThread.run(JBossThread.java:513)
+
+2023-07-10 07:32:32,319 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 80) Envers integration enabled? : true
+2023-07-10 07:32:32,931 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 80) HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+2023-07-10 07:32:33,334 INFO  [stdout] (ServerService Thread Pool -- 85) Hola UPS
+2023-07-10 07:32:33,407 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 85) Inicializando Mojarra 4.0.0.SP01 para el contexto '/demo'
+2023-07-10 07:32:33,791 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 85) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class ec.edu.ups.ppw.demo.servicios.PathBase
+2023-07-10 07:32:33,828 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0021: Registered web context: '/demo' for server 'default-server'
+2023-07-10 07:32:33,871 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "demo.war" (runtime-name : "demo.war")
+2023-07-10 07:32:33,896 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-07-10 07:32:33,897 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 27.0.1.Final (WildFly Core 19.0.1.Final) started in 5181ms - Started 562 of 792 services (363 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml
+2023-07-10 07:32:33,899 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-07-10 07:32:33,899 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-07-10 07:35:53,783 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:35:53,783 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 07:35:53,783 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 07:35:53,783 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) 
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) 
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Nombre: pedro
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:35:53,784 INFO  [stdout] (default task-1) 
+2023-07-10 07:36:33,831 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:36:33,832 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 07:36:33,832 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 07:36:33,832 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 07:36:33,832 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 07:36:33,832 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:36:33,832 INFO  [stdout] (default task-1) 
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) 
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Nombre: tito
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:36:33,833 INFO  [stdout] (default task-1) 
+2023-07-10 07:37:20,457 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:37:20,457 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 07:37:20,457 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 07:37:20,457 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 07:37:20,457 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 07:37:20,457 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) 
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) 
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:37:20,458 INFO  [stdout] (default task-1) Nombre: tito Paul
+2023-07-10 07:37:20,459 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:37:20,459 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:37:20,459 INFO  [stdout] (default task-1) 
+2023-07-10 07:38:05,139 ERROR [stderr] (default task-1) java.lang.Exception: Codigo Incorrecto
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.negocio.GestionClientes.guardarClientes(GestionClientes.java:17)
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+2023-07-10 07:38:05,140 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:79)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:89)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:102)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.as.jpa@27.0.1.Final//org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+2023-07-10 07:38:05,141 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,142 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+2023-07-10 07:38:05,142 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,142 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+2023-07-10 07:38:05,142 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:56)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:254)
+2023-07-10 07:38:05,143 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:390)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:160)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:72)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,144 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.security.IdentityOutflowInterceptor.processInvocation(IdentityOutflowInterceptor.java:73)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.security.SecurityDomainInterceptor.processInvocation(SecurityDomainInterceptor.java:44)
+2023-07-10 07:38:05,145 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,146 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+2023-07-10 07:38:05,147 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,147 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+2023-07-10 07:38:05,147 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,147 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+2023-07-10 07:38:05,147 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:633)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:191)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:81)
+2023-07-10 07:38:05,148 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.negocio.GestionClientes$$$view1.guardarClientes(Unknown Source)
+2023-07-10 07:38:05,149 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2023-07-10 07:38:05,149 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+2023-07-10 07:38:05,149 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:410)
+2023-07-10 07:38:05,150 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.module.ejb.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:134)
+2023-07-10 07:38:05,150 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+2023-07-10 07:38:05,150 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.module.ejb.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:68)
+2023-07-10 07:38:05,150 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:106)
+2023-07-10 07:38:05,150 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.negocio.GestionClientes$Proxy$_$$_Weld$EnterpriseProxy$.guardarClientes(Unknown Source)
+2023-07-10 07:38:05,150 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.servicios.GClientesService.guardarCliente(GClientesService.java:99)
+2023-07-10 07:38:05,151 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.servicios.GClientesService$Proxy$_$$_WeldClientProxy.guardarCliente(Unknown Source)
+2023-07-10 07:38:05,151 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2023-07-10 07:38:05,151 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+2023-07-10 07:38:05,151 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+2023-07-10 07:38:05,151 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+2023-07-10 07:38:05,152 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:249)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+2023-07-10 07:38:05,153 ERROR [stderr] (default task-1) 	at io.smallrye.opentracing-contrib//io.smallrye.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:69)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@3.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@3.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:05,154 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server-servlet@3.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:05,155 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:391)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at org.jboss.xnio@3.8.8.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+2023-07-10 07:38:05,156 ERROR [stderr] (default task-1) 	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-07-10 07:38:25,665 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:38:25,665 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 07:38:25,665 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) 
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 07:38:25,666 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) 
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) Cedula: 2345678909
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) Nombre: jorge
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:38:25,667 INFO  [stdout] (default task-1) 
+2023-07-10 07:38:54,863 ERROR [stderr] (default task-1) java.lang.Exception: Codigo Incorrecto
+2023-07-10 07:38:54,864 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.negocio.GestionClientes.guardarClientes(GestionClientes.java:17)
+2023-07-10 07:38:54,864 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:79)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:89)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.interceptors.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:102)
+2023-07-10 07:38:54,865 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+2023-07-10 07:38:54,866 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,866 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+2023-07-10 07:38:54,868 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,868 ERROR [stderr] (default task-1) 	at org.jboss.as.jpa@27.0.1.Final//org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+2023-07-10 07:38:54,868 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,868 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+2023-07-10 07:38:54,869 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,869 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:40)
+2023-07-10 07:38:54,869 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,869 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+2023-07-10 07:38:54,869 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+2023-07-10 07:38:54,870 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,872 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+2023-07-10 07:38:54,872 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,872 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:56)
+2023-07-10 07:38:54,872 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,872 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:254)
+2023-07-10 07:38:54,872 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:390)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:160)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:509)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:72)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.as.weld.common@27.0.1.Final//org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:89)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,873 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.security.IdentityOutflowInterceptor.processInvocation(IdentityOutflowInterceptor.java:73)
+2023-07-10 07:38:54,874 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,874 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.security.SecurityDomainInterceptor.processInvocation(SecurityDomainInterceptor.java:44)
+2023-07-10 07:38:54,874 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,874 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+2023-07-10 07:38:54,874 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.as.ejb3@27.0.1.Final//org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:60)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:438)
+2023-07-10 07:38:54,875 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:633)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:57)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:422)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.invocation@1.7.0.Final//org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:53)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:191)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.as.ee@27.0.1.Final//org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:81)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.negocio.GestionClientes$$$view1.guardarClientes(Unknown Source)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:410)
+2023-07-10 07:38:54,876 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.module.ejb.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:134)
+2023-07-10 07:38:54,877 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+2023-07-10 07:38:54,877 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.module.ejb.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:68)
+2023-07-10 07:38:54,877 ERROR [stderr] (default task-1) 	at org.jboss.weld.core@5.1.0.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:106)
+2023-07-10 07:38:54,877 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.negocio.GestionClientes$Proxy$_$$_Weld$EnterpriseProxy$.guardarClientes(Unknown Source)
+2023-07-10 07:38:54,877 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.servicios.GClientesService.guardarCliente(GClientesService.java:99)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at deployment.demo.war//ec.edu.ups.ppw.demo.servicios.GClientesService$Proxy$_$$_WeldClientProxy.guardarCliente(Unknown Source)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+2023-07-10 07:38:54,878 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:249)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at org.jboss.resteasy.resteasy-core@6.2.1.Final//org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at jakarta.servlet.api@6.0.0//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at io.smallrye.opentracing-contrib//io.smallrye.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:69)
+2023-07-10 07:38:54,879 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@3.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+2023-07-10 07:38:54,880 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-base@2.0.0.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server@3.0.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at org.wildfly.security.elytron-web.undertow-server-servlet@3.0.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+2023-07-10 07:38:54,881 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+2023-07-10 07:38:54,882 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at org.wildfly.extension.undertow@27.0.1.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1435)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
+2023-07-10 07:38:54,883 ERROR [stderr] (default task-1) 	at io.undertow.servlet@2.3.0.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:391)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at io.undertow.core@2.3.0.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at org.jboss.xnio@3.8.8.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+2023-07-10 07:38:54,884 ERROR [stderr] (default task-1) 	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-07-10 07:39:03,549 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) 
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 07:39:03,550 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) 
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) Cedula: 2345678909
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) Nombre: jorge
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:39:03,551 INFO  [stdout] (default task-1) 
+2023-07-10 07:43:31,654 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) 
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) 
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 07:43:31,655 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 07:43:31,656 INFO  [stdout] (default task-1) Cedula: 2345678909
+2023-07-10 07:43:31,656 INFO  [stdout] (default task-1) Nombre: jorge
+2023-07-10 07:43:31,656 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 07:43:31,656 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 07:43:31,656 INFO  [stdout] (default task-1) 
+2023-07-10 08:11:12,623 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:11:12,627 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 18) WFLYUT0022: Unregistered web context: '/demo' from server 'default-server'
+2023-07-10 08:11:12,666 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:11:12,675 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 18) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@5f155c0e
+2023-07-10 08:11:12,682 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:11:12,704 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment demo.war (runtime-name: demo.war) in 86ms
+2023-07-10 08:11:12,710 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "demo.war" (runtime-name: "demo.war")
+2023-07-10 08:11:12,804 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for primary
+2023-07-10 08:11:12,808 WARN  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2023-07-10 08:11:12,830 INFO  [org.jipijapa] (MSC service thread 1-6) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:11:12,835 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:11:12,851 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment demo.war
+2023-07-10 08:11:12,866 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 18) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2023-07-10 08:11:12,900 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:11:12,900 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 18) HHH000204: Processing PersistenceUnitInfo [name: primary]
+2023-07-10 08:11:12,910 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 18) HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-10 08:11:12,921 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'GestionClientes' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:app/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:module/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:global/demo/GestionClientes
+	java:app/demo/GestionClientes
+	java:module/GestionClientes
+
+2023-07-10 08:11:12,921 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'LugarDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:app/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:module/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:global/demo/LugarDAO
+	java:app/demo/LugarDAO
+	java:module/LugarDAO
+
+2023-07-10 08:11:12,921 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TicketDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:app/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:module/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:global/demo/TicketDAO
+	java:app/demo/TicketDAO
+	java:module/TicketDAO
+
+2023-07-10 08:11:12,921 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'VehiculoDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:app/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:module/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:global/demo/VehiculoDAO
+	java:app/demo/VehiculoDAO
+	java:module/VehiculoDAO
+
+2023-07-10 08:11:12,922 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:app/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:module/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:global/demo/ClienteDAO
+	java:app/demo/ClienteDAO
+	java:module/ClienteDAO
+
+2023-07-10 08:11:12,922 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'DetalleFacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:module/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:global/demo/DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO
+	java:module/DetalleFacturaDAO
+
+2023-07-10 08:11:12,922 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'FacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:app/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:module/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:global/demo/FacturaDAO
+	java:app/demo/FacturaDAO
+	java:module/FacturaDAO
+
+2023-07-10 08:11:12,923 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'DatosDemo' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:app/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:module/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:global/demo/DatosDemo
+	java:app/demo/DatosDemo
+	java:module/DatosDemo
+
+2023-07-10 08:11:12,989 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-6) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
+2023-07-10 08:11:13,134 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2023-07-10 08:11:13,134 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-6) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=demo.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MacBook-Pro-de-Kevin.local, jaeger.version=Java-1.6.0, ip=127.0.0.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2023-07-10 08:11:13,176 INFO  [org.jipijapa] (MSC service thread 1-2) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:11:13,238 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:11:13,263 INFO  [SQL dialect] (ServerService Thread Pool -- 18) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-10 08:11:13,267 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 18) Envers integration enabled? : true
+2023-07-10 08:11:13,385 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 18) HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+2023-07-10 08:11:13,578 INFO  [stdout] (ServerService Thread Pool -- 18) Hola UPS
+2023-07-10 08:11:13,588 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 18) Inicializando Mojarra 4.0.0.SP01 para el contexto '/demo'
+2023-07-10 08:11:13,642 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 18) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class ec.edu.ups.ppw.demo.servicios.PathBase
+2023-07-10 08:11:13,651 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 18) WFLYUT0021: Registered web context: '/demo' for server 'default-server'
+2023-07-10 08:11:13,701 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "demo.war" with deployment "demo.war"
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) 
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:12:48,687 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) 
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Cedula: 2345678909
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Nombre: jorge
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) 
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) ID: 52
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Apellido: quizphie
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:12:48,688 INFO  [stdout] (default task-1) 
+2023-07-10 08:13:56,730 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) 
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) 
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:13:56,731 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Cedula: 2345678909
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Nombre: jorge
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) 
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) ID: 52
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Apellido: quizphie
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) 
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) ID: 53
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Apellido: quizphie
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:13:56,732 INFO  [stdout] (default task-1) 
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) ID: 54
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:13:56,733 INFO  [stdout] (default task-1) 
+2023-07-10 08:14:11,949 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) ID: 1
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) Cedula: 0106306061
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) Nombre: Kevin
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) Apellido: Japa
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) 
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:14:11,950 INFO  [stdout] (default task-1) ID: 2
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Cedula: 0106968548
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Nombre: paul
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Apellido: astudillo
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) 
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) ID: 3
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Cedula: 2345678909
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Nombre: jorge
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) 
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) ID: 52
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Apellido: quizphie
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) 
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) ID: 53
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Apellido: quizphie
+2023-07-10 08:14:11,951 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) 
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) --------------------------------------------------------
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) ID: 54
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) Cedula: 0987654321 
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) Nombre: pancho
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) Apellido: sayago
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) Fecha de Registro: null
+2023-07-10 08:14:11,952 INFO  [stdout] (default task-1) 
+2023-07-10 08:15:59,166 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:15:59,170 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 101) WFLYUT0022: Unregistered web context: '/demo' from server 'default-server'
+2023-07-10 08:15:59,183 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:15:59,185 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 18) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@7cf76cc1
+2023-07-10 08:15:59,185 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:15:59,191 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment demo.war (runtime-name: demo.war) in 26ms
+2023-07-10 08:15:59,192 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "demo.war" (runtime-name: "demo.war")
+2023-07-10 08:15:59,236 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for primary
+2023-07-10 08:15:59,237 WARN  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2023-07-10 08:15:59,247 INFO  [org.jipijapa] (MSC service thread 1-3) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:15:59,250 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:15:59,256 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment demo.war
+2023-07-10 08:15:59,261 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 18) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2023-07-10 08:15:59,276 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:15:59,276 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 18) HHH000204: Processing PersistenceUnitInfo [name: primary]
+2023-07-10 08:15:59,281 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 18) HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-10 08:15:59,285 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GestionClientes' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:app/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:module/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:global/demo/GestionClientes
+	java:app/demo/GestionClientes
+	java:module/GestionClientes
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'LugarDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:app/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:module/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:global/demo/LugarDAO
+	java:app/demo/LugarDAO
+	java:module/LugarDAO
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TicketDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:app/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:module/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:global/demo/TicketDAO
+	java:app/demo/TicketDAO
+	java:module/TicketDAO
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'VehiculoDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:app/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:module/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:global/demo/VehiculoDAO
+	java:app/demo/VehiculoDAO
+	java:module/VehiculoDAO
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:app/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:module/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:global/demo/ClienteDAO
+	java:app/demo/ClienteDAO
+	java:module/ClienteDAO
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'DetalleFacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:module/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:global/demo/DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO
+	java:module/DetalleFacturaDAO
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'FacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:app/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:module/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:global/demo/FacturaDAO
+	java:app/demo/FacturaDAO
+	java:module/FacturaDAO
+
+2023-07-10 08:15:59,286 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'DatosDemo' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:app/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:module/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:global/demo/DatosDemo
+	java:app/demo/DatosDemo
+	java:module/DatosDemo
+
+2023-07-10 08:15:59,326 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-1) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
+2023-07-10 08:15:59,328 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
+2023-07-10 08:15:59,328 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-1) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=demo.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MacBook-Pro-de-Kevin.local, jaeger.version=Java-1.6.0, ip=127.0.0.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2023-07-10 08:15:59,351 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:15:59,391 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 18) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:15:59,405 INFO  [SQL dialect] (ServerService Thread Pool -- 18) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-10 08:15:59,407 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 18) Envers integration enabled? : true
+2023-07-10 08:15:59,491 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 18) HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+2023-07-10 08:15:59,649 INFO  [stdout] (ServerService Thread Pool -- 103) Hola UPS
+2023-07-10 08:15:59,658 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 103) Inicializando Mojarra 4.0.0.SP01 para el contexto '/demo'
+2023-07-10 08:15:59,697 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 103) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class ec.edu.ups.ppw.demo.servicios.PathBase
+2023-07-10 08:15:59,703 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 103) WFLYUT0021: Registered web context: '/demo' for server 'default-server'
+2023-07-10 08:15:59,722 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "demo.war" with deployment "demo.war"
+2023-07-10 08:16:49,792 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:16:49,793 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 103) WFLYUT0022: Unregistered web context: '/demo' from server 'default-server'
+2023-07-10 08:16:49,799 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:16:49,800 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 114) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@2740345
+2023-07-10 08:16:49,801 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:16:49,807 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment demo.war (runtime-name: demo.war) in 16ms
+2023-07-10 08:16:49,807 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "demo.war" (runtime-name: "demo.war")
+2023-07-10 08:16:49,841 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for primary
+2023-07-10 08:16:49,842 WARN  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2023-07-10 08:16:49,851 INFO  [org.jipijapa] (MSC service thread 1-3) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:16:49,853 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:16:49,857 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment demo.war
+2023-07-10 08:16:49,860 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 114) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2023-07-10 08:16:49,872 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:16:49,872 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 114) HHH000204: Processing PersistenceUnitInfo [name: primary]
+2023-07-10 08:16:49,878 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'GestionClientes' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:app/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:module/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:global/demo/GestionClientes
+	java:app/demo/GestionClientes
+	java:module/GestionClientes
+
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'LugarDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:app/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:module/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:global/demo/LugarDAO
+	java:app/demo/LugarDAO
+	java:module/LugarDAO
+
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TicketDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:app/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:module/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:global/demo/TicketDAO
+	java:app/demo/TicketDAO
+	java:module/TicketDAO
+
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'VehiculoDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:app/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:module/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:global/demo/VehiculoDAO
+	java:app/demo/VehiculoDAO
+	java:module/VehiculoDAO
+
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:app/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:module/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:global/demo/ClienteDAO
+	java:app/demo/ClienteDAO
+	java:module/ClienteDAO
+
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'DetalleFacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:module/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:global/demo/DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO
+	java:module/DetalleFacturaDAO
+
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'FacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:app/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:module/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:global/demo/FacturaDAO
+	java:app/demo/FacturaDAO
+	java:module/FacturaDAO
+
+2023-07-10 08:16:49,879 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 114) HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-10 08:16:49,879 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'DatosDemo' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:app/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:module/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:global/demo/DatosDemo
+	java:app/demo/DatosDemo
+	java:module/DatosDemo
+
+2023-07-10 08:16:49,900 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-7) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
+2023-07-10 08:16:50,676 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-7) No shutdown hook registered: Please call close() manually on application shutdown.
+2023-07-10 08:16:50,677 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-7) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=demo.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MacBook-Pro-de-Kevin.local, jaeger.version=Java-1.6.0, ip=127.0.0.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2023-07-10 08:16:50,703 INFO  [org.jipijapa] (MSC service thread 1-8) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:16:50,733 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:16:50,734 INFO  [SQL dialect] (ServerService Thread Pool -- 114) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-10 08:16:50,736 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 114) Envers integration enabled? : true
+2023-07-10 08:16:50,806 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 114) HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+2023-07-10 08:16:50,927 INFO  [stdout] (ServerService Thread Pool -- 111) Hola UPS
+2023-07-10 08:16:50,935 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 111) Inicializando Mojarra 4.0.0.SP01 para el contexto '/demo'
+2023-07-10 08:16:50,964 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 111) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class ec.edu.ups.ppw.demo.servicios.PathBase
+2023-07-10 08:16:50,970 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 111) WFLYUT0021: Registered web context: '/demo' for server 'default-server'
+2023-07-10 08:16:50,987 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "demo.war" with deployment "demo.war"
+2023-07-10 08:24:46,651 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:24:46,653 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 111) WFLYUT0022: Unregistered web context: '/demo' from server 'default-server'
+2023-07-10 08:24:46,669 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 121) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:24:46,670 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 121) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@46abbfc7
+2023-07-10 08:24:46,671 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 121) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:24:46,675 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment demo.war (runtime-name: demo.war) in 25ms
+2023-07-10 08:24:46,677 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "demo.war" (runtime-name: "demo.war")
+2023-07-10 08:24:46,721 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for primary
+2023-07-10 08:24:46,722 WARN  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+2023-07-10 08:24:46,733 INFO  [org.jipijapa] (MSC service thread 1-6) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:24:46,736 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:24:46,754 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment demo.war
+2023-07-10 08:24:46,761 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 121) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2023-07-10 08:24:46,774 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 121) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:24:46,774 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 121) HHH000204: Processing PersistenceUnitInfo [name: primary]
+2023-07-10 08:24:46,779 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 121) HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-07-10 08:24:46,785 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'GestionClientes' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:app/demo/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:module/GestionClientes!ec.edu.ups.ppw.demo.negocio.GestionClientes
+	java:global/demo/GestionClientes
+	java:app/demo/GestionClientes
+	java:module/GestionClientes
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'LugarDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:app/demo/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:module/LugarDAO!ec.edu.ups.ppw.demo.datos.LugarDAO
+	java:global/demo/LugarDAO
+	java:app/demo/LugarDAO
+	java:module/LugarDAO
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TicketDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:app/demo/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:module/TicketDAO!ec.edu.ups.ppw.demo.datos.TicketDAO
+	java:global/demo/TicketDAO
+	java:app/demo/TicketDAO
+	java:module/TicketDAO
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'VehiculoDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:app/demo/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:module/VehiculoDAO!ec.edu.ups.ppw.demo.datos.VehiculoDAO
+	java:global/demo/VehiculoDAO
+	java:app/demo/VehiculoDAO
+	java:module/VehiculoDAO
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ClienteDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:app/demo/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:module/ClienteDAO!ec.edu.ups.ppw.demo.datos.ClienteDAO
+	java:global/demo/ClienteDAO
+	java:app/demo/ClienteDAO
+	java:module/ClienteDAO
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'DetalleFacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:module/DetalleFacturaDAO!ec.edu.ups.ppw.demo.datos.DetalleFacturaDAO
+	java:global/demo/DetalleFacturaDAO
+	java:app/demo/DetalleFacturaDAO
+	java:module/DetalleFacturaDAO
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'FacturaDAO' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:app/demo/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:module/FacturaDAO!ec.edu.ups.ppw.demo.datos.FacturaDAO
+	java:global/demo/FacturaDAO
+	java:app/demo/FacturaDAO
+	java:module/FacturaDAO
+
+2023-07-10 08:24:46,786 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'DatosDemo' in deployment unit 'deployment "demo.war"' are as follows:
+
+	java:global/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:app/demo/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:module/DatosDemo!ec.edu.ups.ppw.demo.negocio.DatosDemo
+	java:global/demo/DatosDemo
+	java:app/demo/DatosDemo
+	java:module/DatosDemo
+
+2023-07-10 08:24:46,812 WARN  [org.wildfly.extension.microprofile.opentracing] (MSC service thread 1-6) WFLYTRACEXT0012: No Jaeger endpoint or sender-binding configured. Installing a no-op sender
+2023-07-10 08:24:46,969 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-6) No shutdown hook registered: Please call close() manually on application shutdown.
+2023-07-10 08:24:46,970 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-6) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=demo.war, reporter=RemoteReporter(sender=NoopSender(), closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=MacBook-Pro-de-Kevin.local, jaeger.version=Java-1.6.0, ip=127.0.0.1}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2023-07-10 08:24:46,985 INFO  [org.jipijapa] (MSC service thread 1-2) JIPIORMV6020260: Second level cache enabled for demo.war#primary
+2023-07-10 08:24:47,013 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 121) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:24:47,015 INFO  [SQL dialect] (ServerService Thread Pool -- 121) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-07-10 08:24:47,017 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 121) Envers integration enabled? : true
+2023-07-10 08:24:47,082 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 121) HHH90000021: Encountered deprecated setting [javax.persistence.schema-generation.database.action], use [jakarta.persistence.schema-generation.database.action] instead
+2023-07-10 08:24:47,209 INFO  [stdout] (ServerService Thread Pool -- 120) Hola UPS
+2023-07-10 08:24:47,217 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 120) Inicializando Mojarra 4.0.0.SP01 para el contexto '/demo'
+2023-07-10 08:24:47,249 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 120) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class ec.edu.ups.ppw.demo.servicios.PathBase
+2023-07-10 08:24:47,255 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 120) WFLYUT0021: Registered web context: '/demo' for server 'default-server'
+2023-07-10 08:24:47,269 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "demo.war" with deployment "demo.war"
+2023-07-10 08:56:34,469 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2023-07-10 08:56:34,499 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2023-07-10 08:56:34,510 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-07-10 08:56:34,523 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 120) WFLYUT0022: Unregistered web context: '/demo' from server 'default-server'
+2023-07-10 08:56:34,523 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/demojeeDS]
+2023-07-10 08:56:34,525 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-07-10 08:56:34,526 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-07-10 08:56:34,526 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-07-10 08:56:34,539 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2023-07-10 08:56:34,565 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 135) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'demo.war#primary'
+2023-07-10 08:56:34,570 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 135) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@ed4a671
+2023-07-10 08:56:34,572 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 135) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'demo.war#primary'
+2023-07-10 08:56:34,572 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ejPostgresDS]
+2023-07-10 08:56:34,577 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = postgresql-driver
+2023-07-10 08:56:34,578 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment demo.war (runtime-name: demo.war) in 57ms
+2023-07-10 08:56:34,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2023-07-10 08:56:34,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-07-10 08:56:34,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2023-07-10 08:56:34,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-07-10 08:56:34,581 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.3.0.Final stopping
+2023-07-10 08:56:34,590 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 27.0.1.Final (WildFly Core 19.0.1.Final) stopped in 72ms

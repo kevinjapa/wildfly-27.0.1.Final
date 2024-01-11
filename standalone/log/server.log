@@ -1,0 +1,99 @@
+2024-01-08 11:27:26,738 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.3.Final
+2024-01-08 11:27:27,429 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2024-01-08 11:27:27,434 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2024-01-08 11:27:27,513 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 27.0.1.Final (WildFly Core 19.0.1.Final) starting
+2024-01-08 11:27:27,514 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	apple.awt.application.name = Main
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/jboss-modules.jar
+	java.class.version = 63.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3z/x0r1p0bd2f7b2ysdskjmx4yc0000gn/T/
+	java.library.path = /Users/kevinjapa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 19.0.1+10-21
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 19
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 19.0.1
+	java.version.date = 2022-10-18
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 19
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 19.0.1+10-21
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final
+	jboss.host.name = macbook-pro-de-kevin
+	jboss.modules.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-pro-de-kevin
+	jboss.qualified.host.name = macbook-pro-de-kevin.local
+	jboss.server.base.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone
+	jboss.server.config.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/data
+	jboss.server.deploy.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/data/content
+	jboss.server.log.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/log
+	jboss.server.name = macbook-pro-de-kevin
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 14.2.1
+	path.separator = :
+	stderr.encoding = UTF-8
+	stdout.encoding = UTF-8
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/jboss-modules.jar -mp /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/kevinjapa/Downloads/wildfly-27.0.1.Final -Djboss.server.base.dir=/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = 419
+	user.dir = /Users/kevinjapa/Downloads/wildfly-27.0.1.Final/bin
+	user.home = /Users/kevinjapa
+	user.language = es
+	user.name = kevinjapa
+	user.timezone = America/Guayaquil
+2024-01-08 11:27:27,515 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/configuration/logging.properties 
+2024-01-08 11:27:27,563 INFO  [org.jboss.vfs] (MSC service thread 1-7) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2024-01-08 11:27:27,566 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment-mount-provider: org.jboss.msc.service.StartException in service jboss.deployment-mount-provider: WFLYSRV0113: Failed to create temp file provider
+	at org.jboss.as.server@19.0.1.Final//org.jboss.as.server.deployment.DeploymentMountProvider$Factory$ServerDeploymentRepositoryImpl.start(DeploymentMountProvider.java:130)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.13.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.io.IOException: VFS000014: Could not create directory for root '/Users/kevinjapa/Downloads/wildfly-27.0.1.Final/standalone/tmp/vfs/temp' (prefix 'temp', suffix '') after 10 attempts
+	at org.jboss.vfs@3.2.17.Final//org.jboss.vfs.TempFileProvider.createTempDir(TempFileProvider.java:157)
+	at org.jboss.vfs@3.2.17.Final//org.jboss.vfs.TempFileProvider.create(TempFileProvider.java:109)
+	at org.jboss.as.server@19.0.1.Final//org.jboss.as.server.deployment.DeploymentMountProvider$Factory$ServerDeploymentRepositoryImpl.start(DeploymentMountProvider.java:127)
+	... 8 more
+
+2024-01-08 11:29:13,350 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2024-01-08 11:29:13,364 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 27.0.1.Final (WildFly Core 19.0.1.Final) stopped in 5ms
