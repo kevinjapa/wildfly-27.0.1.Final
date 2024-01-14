@@ -132,7 +132,7 @@
                     <driver>postgresql-driver</driver>
                     <security>
                         <user-name>postgres</user-name>
-                        <password>root</password>
+                        <password>admin</password>
                     </security>
                 </datasource>
                 <datasource jndi-name="java:jboss/datasources/ExampleDS" pool-name="ExampleDS" enabled="true" use-java-context="true" statistics-enabled="${wildfly.datasources.statistics-enabled:${wildfly.statistics-enabled:false}}">
