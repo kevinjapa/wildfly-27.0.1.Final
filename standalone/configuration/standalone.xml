@@ -128,10 +128,10 @@
         <subsystem xmlns="urn:jboss:domain:datasources:7.0">
             <datasources>
                 <datasource jta="true" jndi-name="java:jboss/datasources/ejPostgresDS" pool-name="ejPostgresDS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:postgresql://localhost:5432/Proyectofinal</connection-url>
+                    <connection-url>jdbc:postgresql://basedatospostgres:5432/despliegecloud</connection-url>
                     <driver>postgresql-driver</driver>
                     <security>
-                        <user-name>postgres</user-name>
+                        <user-name>admin</user-name>
                         <password>admin</password>
                     </security>
                 </datasource>
